@@ -1,5 +1,5 @@
 ---
-description: Close the AlphaForge founder day with evidence and tomorrow's one goal
+description: 用证据收口 AlphaForge 创业日并写下明天唯一目标
 ---
 
 # /end-day
@@ -8,11 +8,11 @@ description: Close the AlphaForge founder day with evidence and tomorrow's one g
 
 ## Read
 
-1. 今天的 `daily/DAY-*.md`
+1. 今天的 `每日/第*.md`
 2. Git Diff（工作区真实改动）
-3. 今天相关 `experiments/`
-4. `ASSUMPTIONS.md`
-5. `TOOLCHAIN.md`
+3. 今天相关 `实验/`
+4. `假设账本.md`
+5. `工具链.md`
 6. User Feedback（有才读）
 7. Product / GitHub / Content Metrics（有数据才读，无则写 n/a）
 8. Used Tools / Built Tools / Failures
@@ -46,12 +46,12 @@ description: Close the AlphaForge founder day with evidence and tomorrow's one g
 ## Then update
 
 - 今天的 Daily Log（补全 Result / Evidence / Tomorrow）
-- `ASSUMPTIONS.md`（Status / Notes）
-- `DECISIONS.md`（如有新决策）
-- `TOOLCHAIN.md`
-- `cases/`（有失败或成功案例才写）
-- `build-log/`
-- `CHANGELOG.md`
+- `假设账本.md`（Status / Notes）
+- `决策日志.md`（如有新决策）
+- `工具链.md`
+- `案例/`（有失败或成功案例才写）
+- `构建日志/`
+- `变更日志.md`
 - Tomorrow Plan 写入 Daily Log 第 10 节
 
 ## Constraints

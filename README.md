@@ -4,6 +4,8 @@
 >
 > 把你的投资方法，锻造成一个持续工作的 AI Agent。
 
+**Don't let AI invest for you. Let AI execute your investment process with you.**
+
 AlphaForge 是一个 **AI-native Personal Investment Agent Experiment**。
 
 它同时验证两件事：
@@ -11,21 +13,16 @@ AlphaForge 是一个 **AI-native Personal Investment Agent Experiment**。
 1. 在 AI Agent 时代，能否把一个投资者自己的投资方法，转化为可执行、可组合、可复盘、可评估、可持续进化的 Investment Skills，并由 Agent 每天持续执行？
 2. 一个 Founder + AI Agents，能否从零做出一个真实产品，并把创业过程本身沉淀成 playbook？
 
-**Don't let AI invest for you. Let AI execute your investment process with you.**
-
 ---
 
-## 这不是什么 / What This Is Not
+## 10 秒看懂
 
-AlphaForge **不是 AI 荐股软件**。
+| 是 | 不是 |
+|---|---|
+| 按你自己的投资方法持续执行研究、过滤、Evidence、Thesis、Plan、Review | AI 荐股 / 预测下一只上涨股票 |
+| Founder OS + Investment Skills + 公开实验 | 又一个炒股软件 / Dashboard 先行 |
 
-我们不把核心价值定义为：
-
-> AI 告诉用户下一只上涨股票。
-
-核心价值定义为：
-
-> AI 按照用户自己的投资方法，持续完成研究、信息过滤、Evidence 更新、Investment Thesis 跟踪、Plan 检查和 Review。
+Founder 主页：https://github.com/grlib
 
 ---
 
@@ -37,7 +34,9 @@ AlphaForge **不是 AI 荐股软件**。
 
 `GO / MODIFY / PIVOT / STOP`
 
-方向见 [ROADMAP.md](./ROADMAP.md)。Day N+1 的任务由 Day N 的 Evidence 决定。
+方向见 [路线图.md](./路线图.md)。第 N+1 天的任务由第 N 天的 Evidence 决定。
+
+最新公开叙事：[内容/草稿/第001期-GitHub.md](./内容/草稿/第001期-GitHub.md)
 
 ---
 
@@ -45,18 +44,18 @@ AlphaForge **不是 AI 荐股软件**。
 
 | 文档 | 用途 |
 |---|---|
-| [AGENTS.md](./AGENTS.md) | Agent 工作规则与 Guardrails |
-| [NORTH_STAR.md](./NORTH_STAR.md) | 北极星与 14 天成功定义 |
-| [FIRST_PRINCIPLES.md](./FIRST_PRINCIPLES.md) | 第一性原理 |
-| [ASSUMPTIONS.md](./ASSUMPTIONS.md) | 核心假设账本 |
-| [PRODUCT.md](./PRODUCT.md) | 产品定义与边界 |
-| [ROADMAP.md](./ROADMAP.md) | 14 天方向，不是 Feature 清单 |
-| [DECISIONS.md](./DECISIONS.md) | 重大决策日志 |
-| [METRICS.md](./METRICS.md) | 指标：什么算成功 |
-| [GROWTH.md](./GROWTH.md) | Build in Public 与增长 |
-| [DAILY_LOOP.md](./DAILY_LOOP.md) | 每日 Founder Loop |
-| [TOOLCHAIN.md](./TOOLCHAIN.md) | Used Tools vs Built Tools |
-| [CHANGELOG.md](./CHANGELOG.md) | 变更记录 |
+| [AGENTS.md](./AGENTS.md) | Agent 工作规则（文件名保留英文约定） |
+| [北极星.md](./北极星.md) | 北极星与 14 天成功定义 |
+| [第一性原理.md](./第一性原理.md) | 第一性原理 |
+| [假设账本.md](./假设账本.md) | 核心假设账本 |
+| [产品.md](./产品.md) | 产品定义与边界 |
+| [路线图.md](./路线图.md) | 14 天方向，不是功能清单 |
+| [决策日志.md](./决策日志.md) | 重大决策日志 |
+| [指标.md](./指标.md) | 指标：什么算成功 |
+| [增长.md](./增长.md) | 公开构建与增长 |
+| [每日循环.md](./每日循环.md) | 每日 Founder Loop |
+| [工具链.md](./工具链.md) | 用过的工具 vs 造过的工具 |
+| [变更日志.md](./变更日志.md) | 变更记录 |
 
 ---
 
@@ -112,4 +111,4 @@ AlphaForge **不是 AI 荐股软件**。
 
 ## License
 
-暂缓。当前优先把实验跑起来。见 [DECISIONS.md](./DECISIONS.md) D-007。
+暂缓。当前优先把实验跑起来。见 [决策日志.md](./决策日志.md) D-007。

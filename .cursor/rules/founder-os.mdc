@@ -5,14 +5,14 @@ alwaysApply: true
 
 # AlphaForge Founder OS
 
-Follow `AGENTS.md` as the source of truth.
+以 `AGENTS.md` 为源规则。
 
-First job: reduce the biggest startup uncertainty with the cheapest credible experiment.
+第一职责：用最便宜可信实验降低最大创业不确定性。
 
-Before any Feature: Which hypothesis does this test? If unanswered, DO NOT BUILD.
+任何 Feature 前：Which hypothesis does this test? 答不上来则 DO NOT BUILD。
 
-Do not build Web App, Dashboard, Login, Payment, Marketplace, or complex infrastructure in this stage.
+当前阶段不要做 Web App、Dashboard、Login、Payment、Marketplace 或复杂基础设施。
 
-Update `daily/`, `ASSUMPTIONS.md`, `DECISIONS.md`, and `TOOLCHAIN.md` when evidence changes.
+Evidence 变化时更新：`每日/`、`假设账本.md`、`决策日志.md`、`工具链.md`。
 
-Use `/start-day` and `/end-day`.
+使用 `/start-day` 与 `/end-day`。

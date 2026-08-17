@@ -46,15 +46,15 @@ Architecture
 Plan → Review → Execute
 ```
 
-1. 先读：`NORTH_STAR.md` `ASSUMPTIONS.md` `DECISIONS.md` 最近的 `daily/` 与 `experiments/`
+1. 先读：`北极星.md` `假设账本.md` `决策日志.md` 最近的 `每日/` 与 `实验/`
 2. 指出今天的 Biggest Unknown
 3. 设计 cheapest credible experiment
 4. 对照 [Do Not Overbuild](#do-not-overbuild) 审查计划
 5. 再执行
 
-除非遇到真正无法自行判断的 blocker，不要频繁向 Founder 提问。采用合理默认值，写入 `DECISIONS.md`。
+除非遇到真正无法自行判断的 blocker，不要频繁向 Founder 提问。采用合理默认值，写入 `决策日志.md`。
 
-需要公开市场、竞品、价格、最新 AI Agent 产品等信息时：**Search first.** 不要用模型记忆假装最新。Research 必须区分 `Fact / Evidence / Interpretation / Hypothesis`，并落入 `research/`。
+需要公开市场、竞品、价格、最新 AI Agent 产品等信息时：**Search first.** 不要用模型记忆假装最新。研究必须区分 `事实 / 证据 / 解释 / 假设`，并落入 `研究/`。
 
 ---
 
@@ -85,11 +85,11 @@ Founder 确认后再进入较大的实现。
 
 ### `/end-day`
 
-读取：Today's Daily Log、Git Diff、Experiment、User Feedback、能获得的 Metrics、Used/Built Tools、Failures、ASSUMPTIONS.md。
+读取：当天日志、Git Diff、实验、用户反馈、能获得的指标、用过的工具 / 造过的工具、失败、`假设账本.md`。
 
-输出 What happened / Evidence / Tool Review / Built Tool Review / Changed Beliefs / Biggest Unknown Now / Tomorrow's One Goal / Do Not Do Tomorrow。
+输出：今天发生了什么 / 证据 / 工具复盘 / 自造工具复盘 / 信念变化 / 当前最大未知 / 明天唯一目标 / 明天不要做。
 
-然后更新 Daily Log、Assumptions、Decisions、Toolchain、Cases、Build Log、Tomorrow Plan。
+然后更新：每日日志、假设账本、决策日志、工具链、案例、构建日志、明日计划。
 
 完整流程见 `.cursor/commands/end-day.md`。
 
@@ -113,7 +113,7 @@ Opinion 可以有，但必须标注为 Interpretation 或 Hypothesis。
 
 > Experiment before Feature.
 
-重大 Feature 前使用 `experiments/EXP-TEMPLATE.md`。
+重大功能前使用 `实验/实验模板.md`。
 
 结论只能是：
 
@@ -123,7 +123,7 @@ Opinion 可以有，但必须标注为 Interpretation 或 Hypothesis。
 
 `PERSEVERE / MODIFY / PIVOT / KILL / DEFER`
 
-失败 Hypothesis 不得从 `ASSUMPTIONS.md` 删除。
+失败假设不得从 `假设账本.md` 删除。
 
 ---
 
@@ -134,13 +134,13 @@ Opinion 可以有，但必须标注为 Interpretation 或 Hypothesis。
 - **Used Tools**：今天借助了什么已有工具（Cursor、GitHub MCP、Baostock…）
 - **Built Tools**：AlphaForge 今天创造了什么新的可复用能力（Skill、Memory、Harness…）
 
-都写入当天 Daily Log 与 `TOOLCHAIN.md`。不要虚构没有使用的工具。
+都写入当天日志与 `工具链.md`。不要虚构没有使用的工具。
 
 ---
 
 ## Investment Skill Rule
 
-Investment Skill 不只是 Prompt。目标结构见 `skills/SKILL-TEMPLATE.md`。
+Investment Skill 不只是 Prompt。目标结构见 `技能/技能模板.md`。
 
 每一个重要 Skill 最终要能回答：
 
