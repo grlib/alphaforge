@@ -32,3 +32,5 @@ What I'll do tomorrow
 Probably not.
 
 但我们可能需要一个真正记得「我是怎么投资」的 Agent。
+
+https://github.com/grlib/alphaforge

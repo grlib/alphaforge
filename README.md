@@ -88,6 +88,18 @@ AlphaForge **不是 AI 荐股软件**。
 
 ---
 
+## Current Issues
+
+14 天只跟踪这 5 个问题：
+
+1. [Prove AlphaForge deserves to exist](https://github.com/grlib/alphaforge/issues/1)
+2. [Map the investment decision loop from first principles](https://github.com/grlib/alphaforge/issues/2)
+3. [Identify the first high-value Investment Skill](https://github.com/grlib/alphaforge/issues/3)
+4. [Build AlphaForge Daily Founder Loop](https://github.com/grlib/alphaforge/issues/4)
+5. [Find first 3 external Alpha users](https://github.com/grlib/alphaforge/issues/5)
+
+---
+
 ## 如何参与
 
 如果你也有自己的投资方法，却很难持续执行，欢迎：

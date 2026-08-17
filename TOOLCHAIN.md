@@ -44,7 +44,7 @@ Best For: 把创业过程变成可订阅的 Evidence。
 
 Weakness: Stars 容易变成 Vanity Metric。
 
-Current Score: n/a（Day 1 创建当天）
+Current Score: 4（Public repo 已推送；Issues #1–#5 已创建）
 
 Lessons: Issues 只建高价值问题，不建 Feature 清单。
 

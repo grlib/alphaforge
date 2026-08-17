@@ -12,3 +12,5 @@
 - 启动 14-Day Founder Experiment
 - 创建 Day 1 实验：Problem framing 是否能被目标用户理解
 - 完成 Episode 001 Draft（X / 雪球 / GitHub Build Log）
+- GitHub：https://github.com/grlib/alphaforge
+- Issues #1–#5 已创建；Milestone 待 `gh auth login` 后补建（D-006）
