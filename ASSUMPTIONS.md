@@ -1,0 +1,46 @@
+# Assumptions / 核心假设账本
+
+失败 Hypothesis 不得删除。只能改 Status。
+
+Status：`UNTESTED` `TESTING` `VALIDATED` `INVALIDATED` `INCONCLUSIVE`
+
+Confidence 是 Founder 当前主观置信，不是统计结果。
+
+---
+
+## Ledger
+
+| ID | Hypothesis | Type | Confidence | Status |
+|---|---|---|---:|---|
+| H001 | 投资者存在「无法持续执行自己的投资方法」的问题 | Problem | 60% | TESTING |
+| H002 | Signal-to-Noise Reduction 有高频价值 | Value | 70% | UNTESTED |
+| H003 | 用户愿意把 Investment Method 提供给 Agent | Behavior | 50% | UNTESTED |
+| H004 | Persistent Investment Memory 明显优于一次性 AI Chat | Product | 60% | UNTESTED |
+| H005 | 用户会形成持续使用 | Retention | 40% | UNTESTED |
+| H006 | 用户愿意付真钱 | Revenue | 30% | UNTESTED |
+| H007 | Free Investment Skill 可以成为获客入口 | Growth | 50% | UNTESTED |
+| H008 | Build in Public 可以获取真正 ICP | Growth | 50% | TESTING |
+| H009 | 多个私人 Investment Methods 能抽象出公共 Skills | Scale | 40% | UNTESTED |
+| H010 | Cases + Evaluation 可以形成长期 Moat | Moat | 30% | UNTESTED |
+
+---
+
+## Notes
+
+### H001 — Problem
+
+Day 1 起进入 TESTING：通过公开内容与后续用户对话，检验「无法持续执行自己的方法」是否被目标用户识别为真问题。
+
+口头认同 ≠ 行为验证。需要看到用户愿意描述自己的方法，或愿意试用 Agent 来执行它。
+
+### H008 — Growth
+
+Day 1 起进入 TESTING：公开仓库 + Episode 001。成功标准不是曝光量，而是是否碰到 ICP，以及他们是否留下可追踪行为（Issue、愿意试用、描述自己的 Job）。
+
+---
+
+## How to Update
+
+每次 `/end-day` 必须检查本表。
+
+任何 Status 变化，在当天 Daily Log 的 Changed Beliefs 写原因，并在此追加一条简短 Note。

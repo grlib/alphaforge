@@ -1,0 +1,18 @@
+---
+description: AlphaForge Founder OS — experiment-first, do not overbuild
+alwaysApply: true
+---
+
+# AlphaForge Founder OS
+
+Follow `AGENTS.md` as the source of truth.
+
+First job: reduce the biggest startup uncertainty with the cheapest credible experiment.
+
+Before any Feature: Which hypothesis does this test? If unanswered, DO NOT BUILD.
+
+Do not build Web App, Dashboard, Login, Payment, Marketplace, or complex infrastructure in this stage.
+
+Update `daily/`, `ASSUMPTIONS.md`, `DECISIONS.md`, and `TOOLCHAIN.md` when evidence changes.
+
+Use `/start-day` and `/end-day`.
