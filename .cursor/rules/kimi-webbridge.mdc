@@ -1,0 +1,30 @@
+---
+description: Kimi WebBridge 操作守则 — 用完必须关闭，少开标签
+alwaysApply: true
+---
+
+# Kimi WebBridge
+
+用本机真实浏览器登录态改社交资料、发帖时，走 Kimi WebBridge（`127.0.0.1:10086`）。
+
+## 强制：用完即关
+
+**每次使用完 Kimi WebBridge 必须关闭**（`close_session` 关掉本任务标签组 / 浏览器窗口），不得留挂着等下次。
+
+原因：多窗口、多标签会越积越多，导致卡顿与误操作（Day 1 已验证）。
+
+本仓库任务结束、或 Founder 明确说「关了」时，都要关。关闭优先于「留给下次用」。
+
+## 操作习惯
+
+1. 同一任务尽量少开标签；能复用当前 tab 就不要 `newTab`
+2. 发完立刻记录公开 URL（写入当日日志 / 增长账本）
+3. 发帖优先短段 CDP `insertText`，避免 X / 知乎 contenteditable 多段落截断
+4. 仅登录、验证码、昵称冷却期让 Founder 接手；其余由 Agent 操作
+5. 一个任务一个 `session`；任务名按任务命名，不要按网站拆 session
+
+## 不要做
+
+- 不要为「方便下次」留下 WebBridge 窗口
+- 不要一次开一堆对比标签导致浏览器假死
+- 不要在未确认登录态时假装已发布成功

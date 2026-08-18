@@ -24,19 +24,21 @@ AlphaForge 是一个 **AI-native Personal Investment Agent Experiment**。
 
 Founder 主页：https://github.com/grlib
 
+![Day 2 Platform Skills](内容/草稿/配图/ep002-cover.png)
+
 ---
 
 ## 当前阶段 / Current Stage
 
-**14-Day High-Speed Founder Experiment**（Day 1 起）
+**公开实验进行中**（Day 002）
 
-目标不是完成一堆 Features，而是产生足够 Evidence，在 Day 14 做出：
+目标不是完成一堆 Features，而是产生足够 Evidence，再决定：
 
 `GO / MODIFY / PIVOT / STOP`
 
 方向见 [路线图.md](./路线图.md)。第 N+1 天的任务由第 N 天的 Evidence 决定。
 
-最新公开叙事：[内容/草稿/第001期-GitHub.md](./内容/草稿/第001期-GitHub.md)
+最新公开叙事：[内容/草稿/第002期-GitHub.md](./内容/草稿/第002期-GitHub.md)
 
 ---
 
@@ -103,7 +105,7 @@ Founder 主页：https://github.com/grlib
 
 如果你也有自己的投资方法，却很难持续执行，欢迎：
 
-- Watch / Star [grlib/alphaforge](https://github.com/grlib/alphaforge)，跟着 14 天实验走
+- Watch / Star [grlib/alphaforge](https://github.com/grlib/alphaforge)，跟着公开实验走
 - 在 Issue 里告诉我：你最想让 Agent 替你持续做的一件事是什么
 - 成为前 3 个外部 Alpha Users（见 Issue #5）
 

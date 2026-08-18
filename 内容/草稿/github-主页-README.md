@@ -1,14 +1,18 @@
 # grlib
 
-**Builder + Investor.**
+<p align="left">
+  <img src="https://github.com/grlib.png" width="88" height="88" alt="AlphaForge Founder" />
+</p>
+
+**AI Builder × Investor.**
+
+One person + AI, forging a breakout product from zero.
 
 正在公开锻造 [AlphaForge](https://github.com/grlib/alphaforge)：
 
 > Forge your investment method into an AI Agent.
 >
 > 把你的投资方法，锻造成一个持续工作的 AI Agent。
-
-**不是荐股软件。**
 
 Don't let AI invest for you.
 Let AI execute your investment process with you.
@@ -17,9 +21,9 @@ Let AI execute your investment process with you.
 
 ## 当前实验
 
-**14-Day Founder Experiment** 进行中。
+公开记录：做了什么、用了什么工具、造了什么工具、什么有效、什么失败、什么改变了判断。
 
-每天公开记录：做了什么、用了什么工具、造了什么工具、什么有效、什么失败、什么改变了判断。
+最新：[Day 2 · Platform Skills](https://github.com/grlib/alphaforge/blob/main/内容/草稿/第002期-GitHub.md)
 
 → [github.com/grlib/alphaforge](https://github.com/grlib/alphaforge)
 
