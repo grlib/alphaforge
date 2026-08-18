@@ -2,7 +2,9 @@
 
 Date: 2026-08-18
 Experiment: EXP-001 / H008
-Status: DRAFT for GitHub Build Log
+Status: PUBLISHED
+
+Published: https://github.com/grlib/alphaforge/blob/main/内容/草稿/第002期-GitHub.md
 
 ---
 
