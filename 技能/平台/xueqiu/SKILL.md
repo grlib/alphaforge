@@ -60,6 +60,7 @@ Version: v1
 ## Known pitfalls
 
 - 浏览器偶发 **无法访问 xueqiu.com**（代理/防火墙）；2026-08-18 身份同步因此未完成
+- 2026-08-18 EP-002：首页 composer `.medium-editor-element` 尺寸为 0，fill 写不进可见框；`mp.xueqiu.com/writeV2` 空白页。发帖失败，不假装成功
 - 旧昵称像普通股民号，必须换成 AlphaForge 叙事
 - 多标签易卡；同任务少开 tab
 
