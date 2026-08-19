@@ -2,17 +2,18 @@
 name: platform-jisilu
 description: >
   Manages AlphaForge Founder presence on Jisilu (集思录): bio, homepage link,
-  avatar, community posts. Use when editing 集思录资料、简介、发帖, jisilu.cn
+  avatar, community posts, reply to comments, like answers, thank new followers.
+  Use when editing 集思录资料、简介、发帖、回复、点赞、关注者、感谢, jisilu.cn
   profile, or 知识库发起.
 ---
 
 # Platform Skill: 集思录 (Jisilu)
 
-Version: v1
+Version: v1.2
 
 ## Purpose / When to use
 
-在集思录维护投资者语境下的 Builder 身份：改简介 / 主页链 / 头像，发社区主贴。  
+在集思录维护投资者语境下的 Builder 身份：改简介 / 主页链 / 头像，发社区主贴，**回复评论 / 点赞 / 感谢新增关注者**。  
 更靠近有方法的 A 股投资者，但仍 **不荐股**。社区调性：**重数据、重逻辑、轻结论**；忌营销/灌水腔。
 
 新加入时遵循 [`../说明.md`](../说明.md)「新加入流程」：先同步基础信息 → 再问是否同步已有文章。
@@ -51,19 +52,39 @@ Version: v1
 
 ## Posting
 
-- 入口：https://www.jisilu.cn/publish/（社区知识库「发起」）
-- 草稿：`内容/草稿/第001期-集思录.md`
-- Day1 / EP-001：https://www.jisilu.cn/question/524510（分类选「其他」）
-- 语气：问题 framing + 公开实验；对齐雪球版直接提问，避免营销感
-- 多段正文：`#advanced_editor` textarea + evaluate 写 value；标题 `#question_contents`
-- 发完立刻记公开 URL → `增长.md` / 当日 `每日/`
+### 入口
+
+- https://www.jisilu.cn/publish/（社区知识库「发起」）
+- 草稿：`内容/草稿/第00N期-集思录.md`；裁切规格见 `内容/内容模板.md`
+
+### 形态
+
+- **问题句当标题**；正文重数据、重逻辑、轻结论
+- 用代码块列数字和失败墙；结尾要**步骤**不要口号
+- 忌营销 / 灌水腔；不荐股
 - 正文软链：`github.com/grlib` + `github.com/grlib/alphaforge`
-- 备注：发布后曾出现「系统维护中：该文章暂时无法回复」
+
+### 截断坑
+
+- 多段：`#advanced_editor` textarea + evaluate 写 value；标题 `#question_contents`
+- 新人主贴 **不能配图** —— 不要依赖图传递信息
+
+### 发布门禁 / 发后核对
+
+- [ ] 标题是问题，不像产品发布
+- [ ] 数字 / 墙在正文
+- [ ] 公开 URL 可打开（可能提示暂时无法回复，仍记 URL）
+- [ ] URL 回写 `增长.md` / 当日 `每日/`
+
+### Evidence
+
+- EP-001：https://www.jisilu.cn/question/524510（分类「其他」）
+- EP-002：https://www.jisilu.cn/question/524518
 
 ## WebBridge ops
 
 1. 遵守 `.cursor/rules/kimi-webbridge.mdc`
-2. session 例：`alphaforge-jisilu-onboard` / `alphaforge-jisilu-post`
+2. session 按任务命名（互动用 `alphaforge-jisilu-engage`）
 3. 先确认能打开 jisilu.cn 且已登录；未登录 / 验证码 → 交 Founder
 4. **不点「更改昵称」**，除非 Founder 已确认接受金币与降权
 5. **结束 `close_session`**
@@ -78,13 +99,93 @@ Version: v1
 - 社区厌恶营销贴 / 灌水贴；EP 必须像真实问题，不像产品发布
 - 新发帖可能提示「系统维护中：该文章暂时无法回复」（2026-08-18 EP-001）
 - 多标签易卡；同任务少开 tab
+- **5.6sol ≠ 发币**：指 GPT-5.6 Sol 代笔味；看不懂梗先查，不脑补
+- **刷屏限制**（2026-08-19 已验证）：短时间连续 `save_answer` 会返回「请不要在短时间内连续大量回复问题刷屏」——停、记未回名单、隔一段时间再续；**不用赞代替回字**
+- 回复形态：引用 → 主回复（无楼中楼评论）
+- 私信：用对方主页「发私信」弹层（`#aw-ajax-box`），不要只开 `/inbox/`
+- 日回复限额若触发：停、记未回名单、改日续；**不用赞代替回字**
 
-## Reply / DM
+## Reply / Like / Thank followers
 
-**Status: Not implemented**
+**Status: Implemented (v1.2)** — DM 筛选仍空壳。
 
-预留：回复主题评论、私信筛选有方法的投资者、拒绝荐股请求。  
-实现门槛：有真实留言/私信后再开。
+### 要立住什么
+
+立住：**能把专业词讲给普通人听的 Builder**。不是来社区做用户访谈的，不是荐股的。
+
+对方卡住的通常是词（Agent、Skill、蒸馏、PUA、AI 味、5.6sol）。回复先翻译，再表态。
+
+### 硬规则
+
+1. **给人留了字的，必须回字。** 短、冷、嘲讽都不例外。赞是附加，不能代替回复。日限额不够就改日续回，不漏人。
+2. **默认不提问。** 先解释、承认、补人话定义。对方已经在讲自己的方法时，才可以接一句，且不是问卷。
+3. **一条回复只清一个词。** 不堆概念、**不主动塞 GitHub / 主页链**（个人主页已有入口）。
+4. **像讨论不像客服。** 短、具体；排比 / 英文夹杂 / 判断句模板不行。致谢不要复制同一句。
+5. **不回关。** 感谢只走文字（帖下或极短私信）。
+
+### 入口
+
+- 自己的主题：`https://www.jisilu.cn/people/weilaihui` → 主题
+- 通知：登录后「通知 / 提醒」
+- 关注者：主页 → 关注者（**关注人**，不是关注帖）
+- 回复：对方回复下的 **引用**（写入主回复框）；本站无楼中楼
+- 点赞：对方回复左侧 **赞同**
+- 私信：对方主页 **发私信**（不是顶栏私信列表）
+
+### 决策树
+
+| 类型 | 信号 | 动作 |
+|---|---|---|
+| 看不懂 / 术语墙 | 汉字看不懂、AI 味、蒸馏 | 文字回：用人话翻译 |
+| 风险提醒 | 模型 PUA、替你做主 | 文字回：讲清边界，不反问 |
+| 兴趣 | 关注了 GitHub、描述方法/卡点 | 文字回：致谢；有方法再接，无则停；不补链 |
+| 冷淡 | 加油、实验精神、关注一下 | 仍文字回：一句致谢，换着写 |
+| 嘲讽 | 如 5.6sol | 先确认梗再回。GPT-5.6 Sol 代笔味 ≠ 发币。承认像模型写的，不解释型号 |
+| 荐股请求 | 买什么 / 代码 | 文字回：拒绝荐股，不给标的 |
+
+### 感谢关注
+
+只处理 **关注人**，不处理关注帖（群发谢关注帖 = 灌水）。
+
+```text
+主页 → 关注者
+  → 只对发帖后新增粉丝动手（对照增长账本基线）
+  → 不回关
+  → 帖下留过言：并进对该条的引用回复致谢
+  → 纯关注无留言：极短私信（每日最多 2 条，改称呼，禁止群发同一句；不带 URL）
+```
+
+私信默认：`谢谢关注。`  
+需要上下文最多加：`公开记录失败，不荐股。`
+
+### WebBridge（互动）
+
+1. session：`alphaforge-jisilu-engage`；`group_title`：集思录互动
+2. 少开 tab；评论框短段 `fill` / evaluate 写 `#advanced_editor`
+3. **本站无楼中楼**：点对方回复下的 **引用**（`a.aw-add-comment` → `answer_quote(id)`），会写入 `@用户` + 引用块到 `#advanced_editor`；再补正文，点 `#save_answer_button`「回复」
+4. 点赞：`agreeVote(this, 'weilaihui', answerId)`（左侧 ▲）
+5. 感谢关注私信：对方主页点 **发私信**（`$.dialog('inbox', '用户名')`）→ `#aw-ajax-box textarea[name=message]` → `button.btn-success`「发送」；入口不是顶栏「私信」
+6. 发后核对公开页 / 收件箱可见
+7. 真实选择器 / 日限额写回本文件 pitfalls
+8. **结束 `close_session`**
+
+### Evidence 回写
+
+对方原话 → `研究/interviews/`；分类：理解 / 误解 / 兴趣 / 冷淡 / 术语墙。  
+互动数字 → `增长.md`；当日 `每日/`；重大坑 → 本文件 pitfalls。
+
+### 待续回（刷屏限制，2026-08-19）
+
+短时间连续回复触发：「请不要在短时间内连续大量回复问题刷屏…」。已回 5/9；未回对照公开帖原话改日续（用户名不入库）：
+
+| 帖 | 公开原话 | 草稿要点 |
+|---|---|---|
+| EP-001 | 加油 | 谢谢。后面少黑话，把一件事讲清楚。 |
+| EP-001 | 关注一下 | 谢谢关注。 |
+| EP-001 | 一股5.6sol的气息扑面而来 | 承认像最新模型代笔；改成人话写 |
+| EP-002 | 都是汉字，但看不懂：） | Skill=可复用说明书；承认用了内部词 |
+
+新增关注待谢私信：已谢 2、待谢 2（名单不入库；对照关注者页，只对发帖后新增且尚未感谢的动手）
 
 ## Evidence
 
@@ -92,3 +193,5 @@ Version: v1
 - 开通决策：D-009
 - 2026-08-18：登录 `weilaihui`；昵称保留；简介/头像因普通用户等级 **未同步**
 - 2026-08-18：EP-001 已发 https://www.jisilu.cn/question/524510
+- 2026-08-18：EP-002 已发 https://www.jisilu.cn/question/524518
+- 2026-08-19：Reply / Like / Thank followers 落地（v1.2）；EP-001 已回 5 条；刷屏限制下 4 条待续；新增关注已谢 2 人私信；DM 筛选仍空壳

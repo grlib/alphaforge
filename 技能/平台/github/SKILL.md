@@ -8,7 +8,7 @@ description: >
 
 # Platform Skill: GitHub
 
-Version: v1
+Version: v1.1
 
 ## Purpose / When to use
 
@@ -49,14 +49,32 @@ Version: v1
 
 ## Posting
 
-- 主内容在仓库 README / Issues / Profile README，不是社交短帖
-- 草稿参考：`内容/草稿/第001期-GitHub.md`、`内容/草稿/github-主页-README.md`
-- 有公开动态 URL 时回写 `增长.md` 与 `每日/`
+### 入口
+
+- **Canonical Build Log 源**：仓库内五段文（`内容/草稿/第00N期-GitHub.md` 或 `每日/` 对外版）
+- Profile README：`grlib/grlib`；链到最新一期
+- 也可用 Issues / Discussion 作公开讨论入口
+
+### 形态
+
+- 保留五段：昨日 / 今天做什么 / 用了什么工具 / 造了什么工具 / 结果+发布
+- 对外**不写明天**；可配表、图、可点链接
+- 裁切规格：`内容/内容模板.md`
+
+### 截断坑
+
+- 少；主要风险是 README 链接失效或把社交短文误当成 Canonical
+
+### 发布门禁 / 发后核对
+
+- [ ] 五段齐全；GitHub 双链有效
+- [ ] Profile / README 能点进 `alphaforge`
+- [ ] URL 回写 `增长.md` / `每日/`
 
 ## WebBridge ops
 
 1. 遵守 `.cursor/rules/kimi-webbridge.mdc`
-2. session 例：`alphaforge-github-profile`
+2. session 按任务命名
 3. 资料页：`https://github.com/settings/profile`
 4. Bio 若 `fill` 失败：对 `#user_profile_bio` / textarea 用 evaluate 写 value 再 Update profile
 5. **任务结束 `close_session`**
