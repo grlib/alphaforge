@@ -29,7 +29,7 @@ Version: v1
 - Display name：可用 `AlphaForge Founder`
 - Website：`https://github.com/grlib`（简介层）；帖子正文再放 alphaforge 仓库
 - 发帖：优先单段短文；多段易截断
-- 禁止：`mian45.com`、荐股话术
+- 禁止：旧个人域名、荐股话术
 
 ## Identity fields
 

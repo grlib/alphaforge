@@ -32,7 +32,7 @@ Version: v1
 - **名称规则（已验证）**：须 **2–8 个汉字**，或 **4–16 个字母**  
   - `AlphaForge Founder` 超限  
   - 短名 `AlphaForge`（10 字母）在规则内，但曾保存未生效（可能需会员改名）
-- 禁止：荐股、`mian45.com`
+- 禁止：荐股、旧个人域名
 
 ## Identity fields
 

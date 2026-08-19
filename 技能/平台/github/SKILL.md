@@ -30,7 +30,7 @@ Version: v1
 - Name：无严格汉字/字母套餐限制（相对知乎宽松）
 - Bio：约 **160 字符**；超限用身份包「压成」短版
 - Website：单 URL；填 `https://github.com/grlib/alphaforge`（或身份包允许的 github.com/grlib）
-- 禁止：`mian45.com`
+- 禁止：旧个人域名
 
 ## Identity fields
 
@@ -71,7 +71,7 @@ Version: v1
 
 - 头像：CDP `DOM.setFileInputFiles` / upload 返回 **Not allowed**（Chrome）；记 blocker，人工传 `avatar-400.png`
 - Billing 横幅可忽略，不阻塞改资料
-- 旧 Website `mian45.com` 必须清掉
+- 旧个人域名必须从 Website 清掉
 - 不要把 `-chanlun` / `AI-Trader` 置顶压过 `alphaforge`
 
 ## Reply / DM
