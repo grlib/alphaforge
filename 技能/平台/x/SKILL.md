@@ -8,7 +8,7 @@ description: >
 
 # Platform Skill: X (Twitter)
 
-Version: v1
+Version: v1.1
 
 ## Purpose / When to use
 
@@ -29,7 +29,7 @@ Version: v1
 - Display name：可用 `AlphaForge Founder`
 - Website：`https://github.com/grlib`（简介层）；帖子正文再放 alphaforge 仓库
 - 发帖：优先单段短文；多段易截断
-- 禁止：`mian45.com`、荐股话术
+- 禁止：旧个人域名、荐股话术
 
 ## Identity fields
 
@@ -46,15 +46,40 @@ Version: v1
 
 ## Posting
 
+### 入口
+
 - 设置：`https://x.com/settings/profile`
-- 发帖：主页 Compose；草稿 `内容/草稿/第001期-X.md`
-- 优先 **短段 CDP `insertText`**，避免 contenteditable 多段 `fill` 截断
-- 发完立刻记公开 URL → `增长.md` / `每日/`
+- 发帖：主页 Compose；草稿 `内容/草稿/第00N期-X.md`
+- 裁切规格：`内容/内容模板.md` → **Thread 5–8 条**，不要单条长墙
+
+### 形态
+
+- 钩子帖 + thread：钩子 → 昨日 → Skill/动作 → 工具 → 墙 → GitHub
+- **一条一个点**；数字优先；失败比成功好点
+
+### 截断坑
+
+- 多段 contenteditable `fill` 易只发第一段 → 优先 **短段 CDP `insertText`**，或拆成回复链
+- 配图 upload 常 **Not allowed** → 可先发文字 thread
+
+### 发布门禁
+
+- 钩子帖独立可读；thread 含至少 1 个失败点 + 仓库链接
+
+### 发后核对清单
+
+- [ ] 每条 URL 可打开
+- [ ] 无整段截断
+- [ ] URL 回写 `增长.md` / `每日/`
+
+### Evidence
+
+- EP-002：https://x.com/daixiaolinuka88/status/2089646778761244972
 
 ## WebBridge ops
 
 1. 遵守 `.cursor/rules/kimi-webbridge.mdc`
-2. session 例：`alphaforge-x-profile` / `alphaforge-x-post`
+2. session 按任务命名
 3. Bio：`fill` 常 Uncaught → evaluate 写 `textarea[name=description]` 再 Save
 4. 少开标签；**结束 `close_session`**
 
@@ -63,7 +88,7 @@ Version: v1
 - Bio / 富文本 `fill` 易失败；用 description textarea + evaluate
 - Setup profile 向导曾卡住，阻断改 Bio（需 Founder 点过或跳过）
 - 头像 upload / CDP 文件：**Not allowed**
-- 发帖多段易只发出第一段 → 短帖或回复补全，并记真实 URL
+- 发帖多段易只发出第一段 → 用 thread / 回复补全，并记真实 URL
 
 ## Reply / DM
 
