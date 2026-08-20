@@ -13,10 +13,10 @@ description: 从昨天的 Evidence 启动 AlphaForge 创业日
 3. `假设账本.md`
 4. `决策日志.md`（最近决策）
 5. 最新 `每日/第*.md`（Yesterday）
-6. 进行中的 `实验/`
+6. 进行中的 `experiments/`
 7. `工具链.md`
 8. `指标.md` 与 `度量/`（有数据才读）
-9. 最近的用户反馈：`研究/访谈/`、GitHub Issues、内容回复记录
+9. 最近的用户反馈：`research/interviews/`、GitHub Issues、内容回复记录
 
 ## Then output exactly
 
@@ -47,5 +47,5 @@ Do Not Do
 - 每天一个最重要问题。
 - 无法回答「Which hypothesis does this test?」则不要提议 Feature。
 - 对照 Guardrails：Build / Architecture / Feature / AI Demo / Vanity / Confirmation Bias / Premature SaaS / Premature Marketplace。
-- 需要外部事实时 Search first，写入 `研究/`。
+- 需要外部事实时 Search first，写入 `research/`。
 - 等 Founder 确认后再 Build。

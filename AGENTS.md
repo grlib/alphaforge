@@ -46,7 +46,7 @@ Architecture
 Plan → Review → Execute
 ```
 
-1. 先读：`北极星.md` `假设账本.md` `决策日志.md` 最近的 `每日/` 与 `实验/`
+1. 先读：`北极星.md` `假设账本.md` `决策日志.md` 最近的 `每日/` 与 `experiments/`
 2. 指出今天的 Biggest Unknown
 3. 设计 cheapest credible experiment
 4. 对照 [Do Not Overbuild](#do-not-overbuild) 审查计划
@@ -54,7 +54,7 @@ Plan → Review → Execute
 
 除非遇到真正无法自行判断的 blocker，不要频繁向 Founder 提问。采用合理默认值，写入 `决策日志.md`。
 
-需要公开市场、竞品、价格、最新 AI Agent 产品等信息时：**Search first.** 不要用模型记忆假装最新。研究必须区分 `事实 / 证据 / 解释 / 假设`，并落入 `研究/`。
+需要公开市场、竞品、价格、最新 AI Agent 产品等信息时：**Search first.** 不要用模型记忆假装最新。研究必须区分 `事实 / 证据 / 解释 / 假设`，并落入 `research/`。
 
 ---
 
@@ -113,7 +113,7 @@ Opinion 可以有，但必须标注为 Interpretation 或 Hypothesis。
 
 > Experiment before Feature.
 
-重大功能前使用 `实验/实验模板.md`。
+重大功能前使用 `experiments/实验模板.md`。
 
 结论只能是：
 
@@ -140,7 +140,7 @@ Opinion 可以有，但必须标注为 Interpretation 或 Hypothesis。
 
 ## Investment Skill Rule
 
-Investment Skill 不只是 Prompt。目标结构见 `技能/技能模板.md`。
+Investment Skill 不只是 Prompt。目标结构见 `skills/技能模板.md`。
 
 每一个重要 Skill 最终要能回答：
 

@@ -10,7 +10,7 @@ description: 用证据收口 AlphaForge 创业日并写下明天唯一目标
 
 1. 今天的 `每日/第*.md`
 2. Git Diff（工作区真实改动）
-3. 今天相关 `实验/`
+3. 今天相关 `experiments/`
 4. `假设账本.md`
 5. `工具链.md`
 6. User Feedback（有才读）
@@ -49,7 +49,7 @@ description: 用证据收口 AlphaForge 创业日并写下明天唯一目标
 - `假设账本.md`（Status / Notes）
 - `决策日志.md`（如有新决策）
 - `工具链.md`
-- `案例/`（有失败或成功案例才写）
+- `cases/`（有失败或成功案例才写）
 - `构建日志/`
 - `变更日志.md`
 - Tomorrow Plan 写入 Daily Log 第 10 节

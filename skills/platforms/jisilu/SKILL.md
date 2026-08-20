@@ -2,48 +2,45 @@
 name: platform-jisilu
 description: >
   Manages AlphaForge Founder presence on Jisilu (集思录): bio, homepage link,
-  avatar, community posts. Use when editing 集思录资料、简介、发帖, jisilu.cn
-  profile, or 知识库发起.
+  avatar, single-thread updates under EP-001, and jisilu-tick (collect @weilaihui,
+  draft via investment-thesis-challenger, Founder-confirm reply). Use when 集思录资料、
+  主贴回复、单帖推进、jisilu-tick、@weilaihui、炼一下、收问作答.
 ---
 
 # Platform Skill: 集思录 (Jisilu)
 
-Version: v1
+Version: v1.5
 
 ## Purpose / When to use
 
-在集思录维护投资者语境下的 Builder 身份：改简介 / 主页链 / 头像，发社区主贴。  
-更靠近有方法的 A 股投资者，但仍 **不荐股**。社区调性：**重数据、重逻辑、轻结论**；忌营销/灌水腔。
+在集思录维护 Builder 身份：改简介 / 主贴推进（D-010）；以及 **jisilu-tick**：收 **@weilaihui** → 加载 **投资想法试炼器** 出草稿 → Founder 确认后发。
 
-新加入时遵循 [`../说明.md`](../说明.md)「新加入流程」：先同步基础信息 → 再问是否同步已有文章。
+社区调性：重数据、重逻辑、轻结论；忌营销/灌水。人格：愿意听逻辑、帮找漏洞、唱反调、记住上次为什么这么想——不是股神、不是客服百科。
+
+新加入流程见 [`../说明.md`](../说明.md)。
 
 ## Account
 
 | 字段 | 值 |
 |---|---|
 | Handle / 昵称 | `weilaihui`（**不改**） |
-| 显示名策略 | 保留现有昵称；改名需 18 金币且降权新人 |
 | 主页 | https://www.jisilu.cn/people/weilaihui |
 | 设置入口 | https://www.jisilu.cn/setting/profile/ |
 | 用户等级（2026-08-18） | **普通用户**（威望 4） |
 
 ## Language & Limits
 
-- **语言侧重**：**中文有限**
-- 个人简介（介绍 / 签名）：身份包 **中版**；但 **需「活跃用户」以上** 才能设置 → 普通用户阶段无法同步
-- **昵称硬规则**：30 天内只能改一次、消耗 18 金币、改完降权为新人 → **默认不改**；当前金币 0，也无法改
-- 无独立 Website 字段；链接只能写进签名（签名本身又被等级锁）
-- 发帖：须绑定手机号（本账号已绑）；新人期主贴不能加图
+- **中文有限**；简介需活跃用户以上才能设 → 普通用户阶段可能无法同步
+- 改昵称：30 天一次、18 金币、降权新人 → **默认不改**
 - 禁止：荐股、必涨、产品发布腔、`mian45.com`
 
 ## Identity fields
 
-| 字段 | 本站叫什么 | 用身份包哪一档 | 备注 |
+| 字段 | 本站 | 身份包 | 备注 |
 |---|---|---|---|
-| 显示名 | 用户名 / 昵称 | — | **保留 `weilaihui`** |
-| 简介 | 介绍（签名） | **中版** | **Blocker：需活跃用户以上** |
-| 网站 / 主页 | 无独立字段 | — | 只能塞进签名 |
-| 头像 | 头像设置 | `avatar-400.png` | **Blocker：需活跃用户以上** |
+| 显示名 | 昵称 | — | 保留 `weilaihui` |
+| 简介 | 签名 | 中版 | Blocker：活跃用户 |
+| 头像 | 头像 | avatar-400 | Blocker：活跃用户 |
 
 ## Copy source
 
@@ -51,44 +48,58 @@ Version: v1
 
 ## Posting
 
-- 入口：https://www.jisilu.cn/publish/（社区知识库「发起」）
-- 草稿：`内容/草稿/第001期-集思录.md`
-- Day1 / EP-001：https://www.jisilu.cn/question/524510（分类选「其他」）
-- 语气：问题 framing + 公开实验；对齐雪球版直接提问，避免营销感
-- 多段正文：`#advanced_editor` textarea + evaluate 写 value；标题 `#question_contents`
-- 发完立刻记公开 URL → `增长.md` / 当日 `每日/`
-- 正文软链：`github.com/grlib` + `github.com/grlib/alphaforge`
-- 备注：发布后曾出现「系统维护中：该文章暂时无法回复」
+**D-010 — 单帖推进。** 主贴：https://www.jisilu.cn/question/524510
+
+日常形态：主贴下**回复**。草稿：`内容/草稿/第00N期-集思录.md`（标注 `形态: 主贴回复`）。
+
+```text
+打开 EP-001 → #advanced_editor 写短更新 → #save_answer_button → 核对可见 → close_session
+```
+
+例外才 `/publish/`。EP-002 为历史，不再挂日常更新。
+
+## jisilu-tick（交易日 1 次）
+
+收 @ + 实验短更新同一趟。节奏：收盘后或 `/end-day` 前。**不要** 5 分钟轮询。
+
+```text
+1. WebBridge session（alphaforge-jisilu-tick）；确认登录
+2. 打开 EP-001 与/或通知；只收集含 @weilaihui 的提问
+3. 未 @ → 跳过
+4. 每条 @：Read `skills/investment-thesis-challenger/SKILL.md`
+   → Intent（默认 THESIS_REVIEW）
+   → 拆·查·驳·证·行 出草稿
+   → 需要读表口径时再 Read `skills/low-risk-query/SKILL.md`（helper）
+   → 有旧 Object则读 `memory/thesis/`
+5. 草稿交 Founder；**未确认不得发出**
+6. 确认后回复提问线程；写/更新 Memory
+7. 若有实验短更新：同趟 EP-001 再回一条（条数少）
+8. close_session
+```
+
+**不做：** 扫未 @ 评论、自动发帖、五站监听。
 
 ## WebBridge ops
 
-1. 遵守 `.cursor/rules/kimi-webbridge.mdc`
-2. session 例：`alphaforge-jisilu-onboard` / `alphaforge-jisilu-post`
-3. 先确认能打开 jisilu.cn 且已登录；未登录 / 验证码 → 交 Founder
-4. **不点「更改昵称」**，除非 Founder 已确认接受金币与降权
-5. **结束 `close_session`**
+遵守 `.cursor/rules/kimi-webbridge.mdc`；一任务一 session；用完 `close_session`。
 
 ## Known pitfalls
 
-- **普通用户不能设签名 / 上传头像**（需「活跃用户」以上）——2026-08-18 已验证
-- 无 Website 字段；链接只能写进签名
-- 改昵称：30 天一次、18 金币、降权新人；当前金币 0 时也无法改
-- 未绑手机不能发言（本账号已绑）
-- 新人期：主贴无图、条数受限；会员数据权益 **不能** 解除社区新人限制
-- 社区厌恶营销贴 / 灌水贴；EP 必须像真实问题，不像产品发布
-- 新发帖可能提示「系统维护中：该文章暂时无法回复」（2026-08-18 EP-001）
-- 多标签易卡；同任务少开 tab
+- 普通用户不能设签名/头像；改昵称成本高
+- 单帖推进；防刷屏；多标签易卡
+- 新帖可能「暂时无法回复」
 
 ## Reply / DM
 
-**Status: Not implemented**
+**Status: thin hook (v1.5)**
 
-预留：回复主题评论、私信筛选有方法的投资者、拒绝荐股请求。  
-实现门槛：有真实留言/私信后再开。
+- @weilaihui → **投资想法试炼器**（D-011）
+- 低风险查询 = helper only
+- 自动回复 = 未实现
 
 ## Evidence
 
-- `增长.md`；身份包落地记录
-- 开通决策：D-009
-- 2026-08-18：登录 `weilaihui`；昵称保留；简介/头像因普通用户等级 **未同步**
-- 2026-08-18：EP-001 已发 https://www.jisilu.cn/question/524510
+- D-009 开通；D-010 单帖；D-011 试炼器为主 Skill
+- EP-001 https://www.jisilu.cn/question/524510
+- EP-002 https://www.jisilu.cn/question/524518（历史）
+- 2026-08-20：jisilu-tick 改挂试炼器（v1.5）
