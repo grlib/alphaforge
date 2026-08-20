@@ -1,0 +1,28 @@
+{
+  "bond_code": "123456",
+  "bond_name": "示例转债",
+  "stock_code": "300001",
+  "stock_name": "示例正股",
+  "snapshot_time": "2026-08-20T15:00:00+08:00",
+  "bond_price": 125.0,
+  "stock_price": 12.0,
+  "conversion_price": 10.0,
+  "face_value": 100,
+  "redemption_price": 110.0,
+  "ytm": -0.02,
+  "remaining_years": 2.3,
+  "remaining_size": 5.8,
+  "rating": "AA",
+  "redemption_status": "WATCH",
+  "revision_status": "NONE",
+  "put_status": "NONE",
+  "maturity_status": "NORMAL",
+  "historical": {
+    "premium_percentile": 0.72,
+    "price_percentile": 0.65
+  },
+  "cross_sectional": {
+    "premium_percentile": 0.68,
+    "ytm_percentile": 0.31
+  }
+}

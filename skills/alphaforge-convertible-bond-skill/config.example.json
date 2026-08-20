@@ -1,0 +1,13 @@
+{
+  "skill_name": "alphaforge-convertible-bond-intelligence",
+  "default_face_value": 100,
+  "data_provider": "your_adapter",
+  "history_window_days": 250,
+  "features": {
+    "why_move": true,
+    "expensive_or_cheap": true,
+    "risk_check": true,
+    "compare": true,
+    "scenario": true
+  }
+}

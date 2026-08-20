@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ConvertibleBondSnapshot",
+  "type": "object",
+  "required": [
+    "bond_code",
+    "bond_name",
+    "bond_price",
+    "stock_price",
+    "conversion_price"
+  ],
+  "properties": {
+    "bond_code": {
+      "type": "string"
+    },
+    "bond_name": {
+      "type": "string"
+    },
+    "stock_code": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "stock_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "snapshot_time": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "bond_price": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "stock_price": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "conversion_price": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "face_value": {
+      "type": "number",
+      "default": 100
+    },
+    "redemption_price": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "ytm": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "remaining_years": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "remaining_size": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "rating": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "redemption_status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "revision_status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "put_status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "maturity_status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}
